@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Portal</title>
+  <style>
+    body{ font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #F5EFEB; }
+    .login-box { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; }
+    input { padding: 10px; border: 1px solid #ccc; border-radius: 4px; display: block; margin: 10px auto; width: 100%; box-sizing: border-box; }
+    button { padding: 10px 20px; background: #2A2A2A; color: white; border: none; border-radius: 4px; cursor: pointer; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+  <div class="login-box" id="login">
+    <h2>Staff Access</h2>
+    <p>Enter passcode to view schedule.</p>
+    <input type="password" id="passcode" placeholder="Passcode">
+    <button onclick="checkPass()">Enter</button>
+    <p id="error" style="color:red; font-size:12px; display:none;">Incorrect code</p>
+  </div>
+
+  <div class="login-box hidden" id="dashboard">
+    <h2>Welcome, Arlenys</h2>
+    <div style="margin: 20px 0;">
+      <a href="https://squareup.com/dashboard/appointments" target="_blank" style="display:block; padding:15px; background:#006AFF; color:white; text-decoration:none; border-radius:6px; margin-bottom:10px;">
+        View Square Schedule
+      </a>
+      <a href="https://squareup.com/dashboard" target="_blank" style="display:block; padding:15px; background:#eee; color:#333; text-decoration:none; border-radius:6px;">
+        Go to Main Dashboard
+      </a>
+    </div>
+    <a href="index.html" style="font-size:13px; color:#888;">Back to Website</a>
+  </div>
+
+  <script>
+    function checkPass() {
+      const input = document.getElementById('passcode').value;
+      // SIMPLE PROTECTION ONLY - Passcode is 2026
+      if(input === '2026') {
+        document.getElementById('login').classList.add('hidden');
+        document.getElementById('dashboard').classList.remove('hidden');
+      } else {
+        document.getElementById('error').style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

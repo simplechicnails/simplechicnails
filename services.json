@@ -1,0 +1,77 @@
+[
+  {
+    "category": "Signature Services",
+    "items": [
+      {
+        "name": "Gel-X Set (Basic Cuticle Care)",
+        "price": "Starting $65",
+        "duration": "2 hrs",
+        "description": "The Apres Gel-X system focuses on minimal damage and no harsh chemicals. Includes precision cuticle work."
+      },
+      {
+        "name": "Acrylic Full Set",
+        "price": "Starting $65",
+        "duration": "1 hr 30 mins",
+        "description": "Custom shaped extensions with a durable acrylic overlay and basic cuticle care."
+      },
+      {
+        "name": "Structured Gel Manicure",
+        "price": "Starting $50",
+        "duration": "2 hrs",
+        "description": "Durable, glossy, ultra-clean finish with a focus on natural nail health."
+      },
+      {
+        "name": "Hard Gel Overlay",
+        "price": "Starting $60",
+        "duration": "2 hrs",
+        "description": "Adds strength and structure to natural nails. Also known as builder gel."
+      }
+    ]
+  },
+  {
+    "category": "Maintenance & Care",
+    "items": [
+      {
+        "name": "Acrylic Refill",
+        "price": "Starting $60",
+        "duration": "1 hr 30 mins",
+        "description": "Rebalancing of the nail structure for 3+ week growth. Includes cuticle care."
+      },
+      {
+        "name": "Manicure Gel",
+        "price": "$50",
+        "duration": "1 hr 15 mins",
+        "description": "Classic gel manicure with filing, shaping, and cuticle care."
+      },
+      {
+        "name": "Mens Manicure",
+        "price": "$45",
+        "duration": "1 hr",
+        "description": "Grooming treatment specifically for men, focusing on cleaning and shaping."
+      }
+    ]
+  },
+  {
+    "category": "Pedicures & Add-ons",
+    "items": [
+      {
+        "name": "Basic Pedicure",
+        "price": "Starting $40+",
+        "duration": "1 hr",
+        "description": "Warm soak, scrub, nail shaping, and polish. A classic reset."
+      },
+      {
+        "name": "Medi-Pedi",
+        "price": "Price Varies",
+        "duration": "2 hrs",
+        "description": "Specialized care for ingrowns, fungal concerns, or thickened nails."
+      },
+      {
+        "name": "French Design Add-on",
+        "price": "+$15",
+        "duration": "30 mins",
+        "description": "Timeless white tips or colored french design added to any service."
+      }
+    ]
+  }
+]
