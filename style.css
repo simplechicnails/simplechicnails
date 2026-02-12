@@ -65,20 +65,57 @@ h1, h2, .scn-proof-title, .scn-mini-title { font-family: 'Playfair Display', ser
 .scn-card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 40px; box-shadow: var(--shadow); }
 .scn-card-soft { background: linear-gradient(180deg, rgba(235, 203, 201, 0.15), rgba(204, 216, 210, 0.15)); }
 
-/* NEW: About Section Grid */
+/* --- 3D ANIMATION STYLES --- */
 .scn-about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
+  perspective: 1000px; /* Creates the 3D space */
 }
-.scn-about-img img {
+
+.scn-3d-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.scn-3d-card {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  transform-style: preserve-3d; /* Allows children to pop out */
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 0.1s ease-out; /* Smooth movement */
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.scn-3d-card img {
   width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   display: block;
 }
+
+/* The Shine Effect */
+.scn-sheen {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 12px;
+  background: linear-gradient(125deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 40%, rgba(255,255,255,0) 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  z-index: 2;
+}
+.scn-3d-container:hover .scn-sheen {
+  opacity: 1;
+}
+
+/* --- END 3D STYLES --- */
 
 .scn-list-category { margin-bottom: 30px; }
 .scn-cat-title { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 15px; }
@@ -105,9 +142,11 @@ h1, h2, .scn-proof-title, .scn-mini-title { font-family: 'Playfair Display', ser
   .scn-cta { flex-direction: column; align-items: stretch; }
   .scn-proof { grid-template-columns: 1fr; }
   .scn-grid { grid-template-columns: 1fr; }
-  /* New Mobile Fix for About Image */
-  .scn-about-grid { grid-template-columns: 1fr; gap: 20px; }
-  .scn-about-img { order: -1; /* Puts image on top on mobile */ }
+  
+  /* Mobile Fixes */
+  .scn-about-grid { grid-template-columns: 1fr; gap: 30px; }
+  /* On mobile, we disable the tilt effect but keep the shadow */
+  .scn-3d-card { transform: none !important; }
   
   .scn-service-item { flex-direction: column; gap: 5px; margin-bottom: 20px; }
   .scn-item-price { text-align: left; color: var(--gold); }
