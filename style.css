@@ -1,9 +1,8 @@
 :root {
-  /* REFINED PALETTE: Warmer and deeper */
-  --ivory: #F5EFEB;       /* Was #FBF8F3 - darkened for warmth */
-  --blush: #EBCBC9;       /* Was #F3E6E5 - more saturated */
-  --sage:  #CCD8D2;       /* Was #DDE8E1 - slightly deeper */
-  --ink:   #2A2A2A;       /* Softer black */
+  --ivory: #F5EFEB;
+  --blush: #EBCBC9;
+  --sage:  #CCD8D2;
+  --ink:   #2A2A2A;
   --muted: #6B6B6B;
   --gold:  #B79B5B;
   --card:  #FFFFFF;
@@ -11,22 +10,16 @@
   --shadow: 0 18px 45px rgba(0, 0, 0, 0.05);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--ivory);
-}
+body { margin: 0; padding: 0; background-color: var(--ivory); }
 
 .scn-lux {
   font-family: 'Inter', sans-serif;
   color: var(--ink);
-  /* Added a rich bottom anchor color so it doesn't fade to pure white */
   background: linear-gradient(180deg, var(--ivory) 0%, #FFF8F5 100%);
   min-height: 100vh;
 }
 
 .scn-hero {
-  /* Increased opacity of gradients (0.6 -> 0.8) and size for more "color" */
   background: 
     radial-gradient(1000px 600px at 80% 0%, rgba(235, 203, 201, 0.5), transparent 70%),
     radial-gradient(900px 600px at 10% 20%, rgba(204, 216, 210, 0.5), transparent 70%);
@@ -34,140 +27,62 @@ body {
   text-align: center;
 }
 
-.scn-hero-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: left; /* Keep left align for chic feel */
-}
+.scn-hero-inner { max-width: 900px; margin: 0 auto; text-align: left; }
 
-h1, h2, .scn-proof-title, .scn-mini-title {
-  font-family: 'Playfair Display', serif; /* Added serif for luxury headers */
-}
+h1, h2, .scn-proof-title, .scn-mini-title { font-family: 'Playfair Display', serif; }
 
 .scn-pill {
-  display: inline-block;
-  padding: 8px 16px;
-  border: 1px solid var(--border);
-  border-radius: 50px;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  color: var(--muted);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
+  display: inline-block; padding: 8px 16px; border: 1px solid var(--border);
+  border-radius: 50px; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px);
+  color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;
 }
 
-.scn-hero h1 {
-  margin: 10px 0 20px;
-  font-size: 52px;
-  line-height: 1.1;
-  font-weight: 600;
-  color: var(--ink);
-}
+.scn-hero h1 { margin: 10px 0 20px; font-size: 52px; line-height: 1.1; font-weight: 600; color: var(--ink); }
 
-.scn-sub {
-  max-width: 600px;
-  font-size: 18px;
-  line-height: 1.6;
-  color: var(--muted);
-  margin-bottom: 30px;
-}
+.scn-sub { max-width: 600px; font-size: 18px; line-height: 1.6; color: var(--muted); margin-bottom: 30px; }
 
-.scn-cta {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 40px;
-}
+.scn-cta { display: flex; gap: 16px; margin-bottom: 40px; }
 
 .scn-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 28px;
-  border-radius: 8px; /* Slightly less rounded for modern look */
-  font-weight: 500;
-  text-decoration: none;
-  font-size: 15px;
-  transition: all 0.3s ease;
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 14px 28px; border-radius: 8px; font-weight: 500; text-decoration: none;
+  font-size: 15px; transition: all 0.3s ease;
 }
 
-.scn-btn-primary {
-  background: var(--ink);
-  color: #fff;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-.scn-btn-primary:hover {
-  background: #000;
-  transform: translateY(-2px);
-}
+.scn-btn-primary { background: var(--ink); color: #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.scn-btn-primary:hover { background: #000; transform: translateY(-2px); }
 
-.scn-btn-ghost {
-  background: transparent;
-  border: 1px solid var(--ink);
-  color: var(--ink);
-}
-.scn-btn-ghost:hover {
-  background: rgba(255,255,255,0.5);
-}
+.scn-btn-ghost { background: transparent; border: 1px solid var(--ink); color: var(--ink); }
+.scn-btn-ghost:hover { background: rgba(255,255,255,0.5); }
 
-.scn-proof {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.scn-proof-item {
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(255,255,255,0.8);
-  border-radius: 12px;
-}
+.scn-proof { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.scn-proof-item { padding: 20px; background: rgba(255, 255, 255, 0.6); border: 1px solid rgba(255,255,255,0.8); border-radius: 12px; }
 .scn-proof-title { font-size: 16px; display: block; margin-bottom: 5px; }
 .scn-proof-desc { font-size: 13px; color: var(--muted); font-family: 'Inter', sans-serif;}
 
-.scn-wrap {
-  max-width: 1060px;
-  margin: 0 auto;
-  padding: 60px 20px;
-}
+.scn-wrap { max-width: 1060px; margin: 0 auto; padding: 60px 20px; }
+.scn-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 30px; }
+.scn-card { background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 40px; box-shadow: var(--shadow); }
+.scn-card-soft { background: linear-gradient(180deg, rgba(235, 203, 201, 0.15), rgba(204, 216, 210, 0.15)); }
 
-.scn-grid {
+/* NEW: About Section Grid */
+.scn-about-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr; /* Gives more space to menu */
-  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.scn-about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  display: block;
 }
 
-.scn-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: var(--shadow);
-}
-
-.scn-card-soft {
-  background: linear-gradient(180deg, rgba(235, 203, 201, 0.15), rgba(204, 216, 210, 0.15));
-}
-
-.scn-list-category {
-  margin-bottom: 30px;
-}
-.scn-cat-title {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--gold);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-}
-
-.scn-service-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
+.scn-list-category { margin-bottom: 30px; }
+.scn-cat-title { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 15px; }
+.scn-service-item { display: flex; justify-content: space-between; margin-bottom: 12px; }
 .scn-item-details { max-width: 80%; }
 .scn-item-name { font-weight: 600; display: block; font-size: 16px; }
 .scn-item-desc { font-size: 13px; color: var(--muted); display: block; margin-top: 4px; }
@@ -175,45 +90,25 @@ h1, h2, .scn-proof-title, .scn-mini-title {
 
 .scn-bullets { display: flex; flex-direction: column; gap: 20px; margin-top: 20px; }
 .scn-bullet { display: flex; gap: 15px; }
-.dot {
-  min-width: 8px; height: 8px;
-  border-radius: 50%;
-  background: var(--gold);
-  margin-top: 8px;
-}
+.dot { min-width: 8px; height: 8px; border-radius: 50%; background: var(--gold); margin-top: 8px; }
 
-.scn-banner {
-  margin-top: 40px;
-  background: #fff;
-  padding: 40px;
-  border-radius: 20px;
-  text-align: center;
-  border: 1px solid var(--border);
-}
+.scn-banner { margin-top: 40px; background: #fff; padding: 40px; border-radius: 20px; text-align: center; border: 1px solid var(--border); }
 
-.scn-socials a {
-  margin-right: 15px;
-  color: var(--ink);
-  font-weight: 600;
-  text-decoration: none;
-  border-bottom: 1px solid var(--gold);
-}
+.scn-socials { margin-top: 20px; }
+.scn-socials a { margin-right: 15px; color: var(--ink); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--gold); }
 
-.scn-footer {
-  margin-top: 60px;
-  text-align: center;
-  font-size: 13px;
-  color: var(--muted);
-  opacity: 0.6;
-}
+.scn-footer { margin-top: 60px; text-align: center; font-size: 13px; color: var(--muted); opacity: 0.6; }
 
-/* Mobile Responsiveness */
 @media(max-width: 768px){
   .scn-hero { text-align: left; padding: 60px 20px; }
   .scn-hero h1 { font-size: 38px; }
   .scn-cta { flex-direction: column; align-items: stretch; }
   .scn-proof { grid-template-columns: 1fr; }
   .scn-grid { grid-template-columns: 1fr; }
+  /* New Mobile Fix for About Image */
+  .scn-about-grid { grid-template-columns: 1fr; gap: 20px; }
+  .scn-about-img { order: -1; /* Puts image on top on mobile */ }
+  
   .scn-service-item { flex-direction: column; gap: 5px; margin-bottom: 20px; }
   .scn-item-price { text-align: left; color: var(--gold); }
 }
