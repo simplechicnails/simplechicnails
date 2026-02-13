@@ -20,12 +20,21 @@ async function fetchServices() {
       cat.items.forEach(item => {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'scn-service-item';
+        
+        // CHECK FOR BOOKING URL
+        const bookBtn = item.booking_url 
+          ? `<a href="${item.booking_url}" target="_blank" class="scn-btn-tiny">Book</a>` 
+          : '';
+
         itemDiv.innerHTML = `
           <div class="scn-item-details">
             <span class="scn-item-name">${item.name} <span style="font-weight:400; font-size:12px; color:#888;">(${item.duration})</span></span>
             <span class="scn-item-desc">${item.description}</span>
           </div>
-          <div class="scn-item-price">${item.price}</div>
+          <div class="scn-item-price">
+            ${item.price}
+            ${bookBtn}
+          </div>
         `;
         container.appendChild(itemDiv);
       });
@@ -40,7 +49,6 @@ async function fetchServices() {
   }
 }
 
-// --- 3D TILT ENGINE ---
 function init3DTilt() {
   const container = document.querySelector('.scn-3d-container');
   const card = document.querySelector('.scn-3d-card');
@@ -49,25 +57,18 @@ function init3DTilt() {
   if(!container || !card) return;
 
   container.addEventListener('mousemove', (e) => {
-    // Calculate rotation
-    // The divisor (20) controls the sensitivity. Lower = more extreme tilt.
     const xAxis = (window.innerWidth / 2 - e.pageX) / 20;
     const yAxis = (window.innerHeight / 2 - e.pageY) / 20;
 
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-    
-    // Move the sheen opposite to the mouse for realistic reflection
-    // We adjust background position to simulate light travel
     sheen.style.backgroundPosition = `${xAxis}px ${yAxis}px`;
   });
 
-  // Snap back to center when mouse leaves
   container.addEventListener('mouseleave', () => {
     card.style.transform = 'rotateY(0deg) rotateX(0deg)';
     card.style.transition = 'transform 0.5s ease';
   });
 
-  // Remove transition when moving so it feels instant
   container.addEventListener('mouseenter', () => {
     card.style.transition = 'none';
   });
