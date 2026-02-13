@@ -21,7 +21,7 @@ body { margin: 0; padding: 0; background-color: var(--ivory); }
   min-height: 100vh;
 }
 
-/* --- NEW HERO LAYOUT --- */
+/* --- NEW HERO LAYOUT (Image Centered) --- */
 .scn-hero {
   background: linear-gradient(135deg, #F9F1F0 0%, #F3E4E4 100%);
   padding: 60px 20px 40px;
@@ -31,15 +31,14 @@ body { margin: 0; padding: 0; background-color: var(--ivory); }
 .scn-hero-inner {
   max-width: 1100px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  display: flex;
+  justify-content: center; /* Centers the image */
   align-items: center;
 }
 
-.scn-hero-content {
-  text-align: left;
-  z-index: 2;
+.scn-hero-img {
+  width: 100%;
+  max-width: 900px; /* Controls max size so it doesn't get too huge */
 }
 
 .scn-hero-img img {
@@ -48,7 +47,6 @@ body { margin: 0; padding: 0; background-color: var(--ivory); }
   border-radius: 12px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.12);
   display: block;
-  transform: rotate(-1deg);
   border: 4px solid #fff;
 }
 
@@ -59,23 +57,6 @@ h1, h2, .scn-proof-title, .scn-mini-title { font-family: 'Playfair Display', ser
   border-radius: 50px; background: rgba(255, 255, 255, 0.8);
   color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 24px;
 }
-
-.scn-hero h1 { margin: 10px 0 24px; font-size: 48px; line-height: 1.1; font-weight: 600; color: var(--ink); }
-.scn-sub { font-size: 18px; line-height: 1.6; color: var(--muted); margin-bottom: 35px; max-width: 480px; }
-
-.scn-cta { display: flex; gap: 16px; }
-
-.scn-btn {
-  display: inline-flex; align-items: center; justify-content: center;
-  padding: 14px 28px; border-radius: 50px;
-  font-weight: 500; text-decoration: none; font-size: 15px; transition: all 0.3s ease;
-}
-
-.scn-btn-primary { background: var(--ink); color: #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-.scn-btn-primary:hover { background: #000; transform: translateY(-2px); }
-
-.scn-btn-ghost { background: transparent; border: 1px solid var(--ink); color: var(--ink); }
-.scn-btn-ghost:hover { background: rgba(255,255,255,0.5); }
 
 /* --- PROOF BAR --- */
 .scn-proof-bar {
@@ -134,16 +115,14 @@ h1, h2, .scn-proof-title, .scn-mini-title { font-family: 'Playfair Display', ser
 .scn-bullet { display: flex; gap: 15px; }
 .dot { min-width: 8px; height: 8px; border-radius: 50%; background: var(--gold); margin-top: 8px; }
 
-.scn-banner { margin-top: 40px; background: #fff; padding: 40px; border-radius: 20px; text-align: center; border: 1px solid var(--border); }
+.scn-link { display: inline-block; margin-top: 10px; color: var(--gold); font-weight: 650; text-decoration: none; }
+.scn-link:hover { text-decoration: underline; }
+
 .scn-footer { margin-top: 60px; text-align: center; font-size: 13px; color: var(--muted); opacity: 0.6; }
 
 @media(max-width: 900px){
-  .scn-hero-inner { grid-template-columns: 1fr; gap: 30px; text-align: center; }
-  .scn-hero-content { order: 2; text-align: center; }
-  .scn-hero-img { order: 1; margin: 0 -20px; }
-  .scn-hero-img img { border-radius: 0; transform: none; border: none; }
-  .scn-sub { margin: 0 auto 30px; }
-  .scn-cta { justify-content: center; }
+  .scn-hero { padding: 40px 20px; }
+  .scn-hero-img { margin: 0; max-width: 100%; }
   .scn-proof-bar { grid-template-columns: 1fr; margin-top: 40px; }
   .scn-grid { grid-template-columns: 1fr; }
 }
