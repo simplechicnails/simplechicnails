@@ -1,75 +1,79 @@
-document.addEventListener('DOMContentLoaded', () => {
-  fetchServices();
-  init3DTilt();
-});
-
-async function fetchServices() {
-  const container = document.getElementById('service-container');
-  try {
-    const response = await fetch('services.json');
-    if (!response.ok) throw new Error("Could not load services");
-    const categories = await response.json();
-    container.innerHTML = ''; 
-
-    categories.forEach(cat => {
-      const catTitle = document.createElement('div');
-      catTitle.className = 'scn-cat-title';
-      catTitle.textContent = cat.category;
-      container.appendChild(catTitle);
-
-      cat.items.forEach(item => {
-        const itemDiv = document.createElement('div');
-        itemDiv.className = 'scn-service-item';
-        
-        // Check if there is a booking URL
-        const bookBtn = item.booking_url 
-          ? `<a href="${item.booking_url}" target="_blank" class="scn-btn-tiny">Book</a>` 
-          : '';
-
-        itemDiv.innerHTML = `
-          <div class="scn-item-details">
-            <span class="scn-item-name">${item.name} <span style="font-weight:400; font-size:12px; color:#888;">(${item.duration})</span></span>
-            <span class="scn-item-desc">${item.description}</span>
-          </div>
-          <div class="scn-item-price">
-            ${item.price}
-            ${bookBtn}
-          </div>
-        `;
-        container.appendChild(itemDiv);
-      });
-      
-      const spacer = document.createElement('div');
-      spacer.style.height = '20px';
-      container.appendChild(spacer);
-    });
-  } catch (error) {
-    container.innerHTML = `<p style="color:red">Unable to load menu. Please refresh.</p>`;
-    console.error(error);
+[
+  {
+    "category": "Signature Services",
+    "items": [
+      {
+        "name": "Gel-X Set (Basic Cuticle Care)",
+        "price": "Starting $65",
+        "duration": "2 hrs",
+        "description": "The Apres Gel-X system focuses on minimal damage and no harsh chemicals. Includes precision cuticle work.",
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+      },
+      {
+        "name": "Acrylic Full Set",
+        "price": "Starting $65",
+        "duration": "1 hr 30 mins",
+        "description": "Custom shaped extensions with a durable acrylic overlay and basic cuticle care.",
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+      },
+      {
+        "name": "Structured Gel Manicure",
+        "price": "Starting $50",
+        "duration": "2 hrs",
+        "description": "Durable, glossy, ultra-clean finish with a focus on natural nail health."
+      },
+      {
+        "name": "Hard Gel Overlay",
+        "price": "Starting $60",
+        "duration": "2 hrs",
+        "description": "Adds strength and structure to natural nails. Also known as builder gel."
+      }
+    ]
+  },
+  {
+    "category": "Maintenance & Care",
+    "items": [
+      {
+        "name": "Acrylic Refill",
+        "price": "Starting $60",
+        "duration": "1 hr 30 mins",
+        "description": "Rebalancing of the nail structure for 3+ week growth. Includes cuticle care."
+      },
+      {
+        "name": "Manicure Gel",
+        "price": "$50",
+        "duration": "1 hr 15 mins",
+        "description": "Classic gel manicure with filing, shaping, and cuticle care."
+      },
+      {
+        "name": "Mens Manicure",
+        "price": "$45",
+        "duration": "1 hr",
+        "description": "Grooming treatment specifically for men, focusing on cleaning and shaping."
+      }
+    ]
+  },
+  {
+    "category": "Pedicures & Add-ons",
+    "items": [
+      {
+        "name": "Basic Pedicure",
+        "price": "Starting $40+",
+        "duration": "1 hr",
+        "description": "Warm soak, scrub, nail shaping, and polish. A classic reset."
+      },
+      {
+        "name": "Medi-Pedi",
+        "price": "Price Varies",
+        "duration": "2 hrs",
+        "description": "Specialized care for ingrowns, fungal concerns, or thickened nails."
+      },
+      {
+        "name": "French Design Add-on",
+        "price": "+$15",
+        "duration": "30 mins",
+        "description": "Timeless white tips or colored french design added to any service."
+      }
+    ]
   }
-}
-
-function init3DTilt() {
-  const container = document.querySelector('.scn-3d-container');
-  const card = document.querySelector('.scn-3d-card');
-  const sheen = document.querySelector('.scn-sheen');
-
-  if(!container || !card) return;
-
-  container.addEventListener('mousemove', (e) => {
-    const xAxis = (window.innerWidth / 2 - e.pageX) / 20;
-    const yAxis = (window.innerHeight / 2 - e.pageY) / 20;
-
-    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-    sheen.style.backgroundPosition = `${xAxis}px ${yAxis}px`;
-  });
-
-  container.addEventListener('mouseleave', () => {
-    card.style.transform = 'rotateY(0deg) rotateX(0deg)';
-    card.style.transition = 'transform 0.5s ease';
-  });
-
-  container.addEventListener('mouseenter', () => {
-    card.style.transition = 'none';
-  });
-}
+]
