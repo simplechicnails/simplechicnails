@@ -184,27 +184,38 @@ h1, h2, .scn-proof-title, .scn-mini-title { font-family: 'Playfair Display', ser
   font-weight: 600;
 }
 
-.close-expander {
-  background: transparent;
-  border: 1px solid var(--muted);
+/* NEW: Big High-Contrast Close Button */
+.scn-btn-close-big {
+  background: var(--ink); /* Black/Dark Grey */
+  color: #fff;
+  border: none;
   border-radius: 4px;
-  padding: 4px 10px;
-  font-size: 11px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700; /* Bold */
   text-transform: uppercase;
-  color: var(--muted);
   cursor: pointer;
-  transition: all 0.2s;
+  letter-spacing: 1px;
+  transition: background 0.2s;
 }
 
-.close-expander:hover {
-  background: var(--ink);
-  color: #fff;
-  border-color: var(--ink);
+.scn-btn-close-big:hover {
+  background: #000; /* Darker black on hover */
+  transform: translateY(-1px);
+}
+
+/* NEW: Footer Section for Second Button */
+.expander-footer {
+  background: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-start; /* Align left */
+  border-top: 1px solid rgba(0,0,0,0.05);
 }
 
 .booking-expander iframe {
   width: 100%;
-  height: 600px; /* Tall enough for the widget */
+  height: 450px; /* Reduced Height to 450px */
   border: none;
   display: block;
 }
