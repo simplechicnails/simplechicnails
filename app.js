@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
   fetchServices();
-  init3DTilt();
 });
 
 async function fetchServices() {
@@ -21,9 +20,9 @@ async function fetchServices() {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'scn-service-item';
         
-        // CHECK FOR BOOKING URL
+        // This generates the button for ALL services now
         const bookBtn = item.booking_url 
-          ? `<a href="${item.booking_url}" target="_blank" class="scn-btn-tiny">Book</a>` 
+          ? `<button onclick="openModal('${item.booking_url}')" class="scn-btn-tiny">Book</button>` 
           : '';
 
         itemDiv.innerHTML = `
@@ -49,27 +48,26 @@ async function fetchServices() {
   }
 }
 
-function init3DTilt() {
-  const container = document.querySelector('.scn-3d-container');
-  const card = document.querySelector('.scn-3d-card');
-  const sheen = document.querySelector('.scn-sheen');
+// --- MODAL FUNCTIONS ---
+function openModal(url) {
+  const modal = document.getElementById('booking-modal');
+  const iframe = document.getElementById('booking-frame');
+  iframe.src = url;
+  modal.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
 
-  if(!container || !card) return;
+function closeModal() {
+  const modal = document.getElementById('booking-modal');
+  const iframe = document.getElementById('booking-frame');
+  modal.style.display = 'none';
+  iframe.src = '';
+  document.body.style.overflow = 'auto';
+}
 
-  container.addEventListener('mousemove', (e) => {
-    const xAxis = (window.innerWidth / 2 - e.pageX) / 20;
-    const yAxis = (window.innerHeight / 2 - e.pageY) / 20;
-
-    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-    sheen.style.backgroundPosition = `${xAxis}px ${yAxis}px`;
-  });
-
-  container.addEventListener('mouseleave', () => {
-    card.style.transform = 'rotateY(0deg) rotateX(0deg)';
-    card.style.transition = 'transform 0.5s ease';
-  });
-
-  container.addEventListener('mouseenter', () => {
-    card.style.transition = 'none';
-  });
+window.onclick = function(event) {
+  const modal = document.getElementById('booking-modal');
+  if (event.target == modal) {
+    closeModal();
+  }
 }
