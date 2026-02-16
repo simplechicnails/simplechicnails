@@ -1,78 +1,96 @@
 [
   {
-    "category": "Signature Services",
+    "category": "Signature Manicures",
     "items": [
       {
-        "name": "Gel-X Set (Basic Cuticle Care)",
-        "price": "Starting $65",
+        "name": "Gel Manicure",
+        "price": "$70",
         "duration": "2 hrs",
-        "description": "The Apres Gel-X system focuses on minimal damage and no harsh chemicals. Includes precision cuticle work.",
+        "description": "A dry precision manicure finished with a flawless gel polish application for a clean, glossy result."
+      },
+      {
+        "name": "Structured Gel Manicure (Rubber Base)",
+        "price": "$80",
+        "duration": "2 hrs",
+        "description": "A structured manicure designed to reinforce natural nails using rubber base—flexible support that helps reduce breakage while creating a smooth, balanced apex."
+      },
+      {
+        "name": "Hard Gel Overlay",
+        "price": "$90",
+        "duration": "2 hrs",
+        "description": "A builder gel overlay that adds strength and structure to natural nails, finished with a refined apex and long-lasting shine."
+      },
+      {
+        "name": "Gel-X Set",
+        "price": "Starting $90",
+        "duration": "2 hrs",
+        "description": "Lightweight, full-coverage extensions for a natural look and durable wear, finished with precision detailing.",
         "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
       },
       {
         "name": "Acrylic Full Set",
-        "price": "Starting $65",
-        "duration": "1 hr 30 mins",
-        "description": "Custom shaped extensions with a durable acrylic overlay and basic cuticle care.",
+        "price": "Starting $90",
+        "duration": "2 hrs 30 mins",
+        "description": "Custom-shaped extensions with a durable acrylic overlay for long-lasting structure, strength, and a crisp finish.",
         "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
       },
       {
-        "name": "Structured Gel Manicure",
-        "price": "Starting $50",
-        "duration": "2 hrs",
-        "description": "Durable, glossy, ultra-clean finish with a focus on natural nail health."
-      },
-      {
-        "name": "Hard Gel Overlay",
-        "price": "Starting $60",
-        "duration": "2 hrs",
-        "description": "Adds strength and structure to natural nails. Also known as builder gel."
-      }
-    ]
-  },
-  {
-    "category": "Maintenance & Care",
-    "items": [
-      {
         "name": "Acrylic Refill",
-        "price": "Starting $60",
-        "duration": "1 hr 30 mins",
-        "description": "Rebalancing of the nail structure for 3+ week growth. Includes cuticle care."
+        "price": "$80",
+        "duration": "2 hrs",
+        "description": "A structured rebalance for grown-out acrylic sets to restore shape, strength, and symmetry."
       },
       {
-        "name": "Manicure Gel",
-        "price": "$50",
-        "duration": "1 hr 15 mins",
-        "description": "Classic gel manicure with filing, shaping, and cuticle care."
-      },
-      {
-        "name": "Mens Manicure",
-        "price": "$45",
-        "duration": "1 hr",
-        "description": "Grooming treatment specifically for men, focusing on cleaning and shaping."
+        "name": "Men’s Manicure",
+        "price": "$65",
+        "duration": "2 hrs",
+        "description": "A dry precision manicure focused on clean grooming, shape, and refined detailing."
       }
     ]
   },
   {
-    "category": "Pedicures & Add-ons",
+    "category": "Dry Pedicure",
     "items": [
       {
-        "name": "Basic Pedicure",
-        "price": "Starting $40+",
-        "duration": "1 hr",
-        "description": "Warm soak, scrub, nail shaping, and polish. A classic reset."
-      },
-      {
-        "name": "Medi-Pedi",
-        "price": "Price Varies",
+        "name": "Dry Pedicure",
+        "price": "$90",
         "duration": "2 hrs",
-        "description": "Specialized care for ingrowns, fungal concerns, or thickened nails."
+        "description": "A waterless, detail-focused pedicure featuring precision nail work, advanced callus care, and gel polish application for smooth, polished feet."
+      }
+    ]
+  },
+  {
+    "category": "Add-Ons",
+    "items": [
+      {
+        "name": "Callus Therapy Upgrade",
+        "price": "+$15",
+        "duration": "+15 mins",
+        "description": "Advanced callus softening and removal for noticeably smoother soles."
       },
       {
-        "name": "French Design Add-on",
-        "price": "+$15",
+        "name": "French Design",
+        "price": "$15",
         "duration": "30 mins",
-        "description": "Timeless white tips or colored french design added to any service."
+        "description": "Classic or modern french tip design added to any service."
+      },
+      {
+        "name": "Nail Design",
+        "price": "$10+",
+        "duration": "15 mins+",
+        "description": "Custom nail art. Price varies by complexity."
+      },
+      {
+        "name": "Nail Repair",
+        "price": "$15",
+        "duration": "15 mins",
+        "description": "Repair for a single broken or damaged nail."
+      },
+      {
+        "name": "Safe Product Removal",
+        "price": "$20",
+        "duration": "30 mins",
+        "description": "Gentle removal of existing product to preserve natural nail health."
       }
     ]
   }
