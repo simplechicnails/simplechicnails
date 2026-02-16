@@ -20,10 +20,9 @@ async function fetchServices() {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'scn-service-item';
         
-        // --- NEW BUTTON LOGIC: OPEN MODAL ---
-        // Instead of <a href="...">, we use onclick="openModal()"
+        // Button Logic: Triggers toggleBooking()
         const bookBtn = item.booking_url 
-          ? `<button onclick="openModal('${item.booking_url}')" class="scn-btn-tiny">Book</button>` 
+          ? `<button onclick="toggleBooking('${item.booking_url}')" class="scn-btn-tiny">Book</button>` 
           : '';
 
         itemDiv.innerHTML = `
@@ -49,39 +48,30 @@ async function fetchServices() {
   }
 }
 
-// --- MODAL FUNCTIONS ---
-function openModal(url) {
-  const modal = document.getElementById('booking-modal');
+// --- EXPANDABLE BOX LOGIC ---
+function toggleBooking(url) {
+  const expander = document.getElementById('booking-expander');
   const iframe = document.getElementById('booking-frame');
   
-  // Set the iframe source to the Square URL
-  iframe.src = url;
-  
-  // Show the modal
-  modal.style.display = 'block';
-  
-  // Prevent body scrolling while modal is open (luxury touch)
-  document.body.style.overflow = 'hidden';
-}
-
-function closeModal() {
-  const modal = document.getElementById('booking-modal');
-  const iframe = document.getElementById('booking-frame');
-  
-  // Hide modal
-  modal.style.display = 'none';
-  
-  // Clear iframe so it stops loading in background
-  iframe.src = '';
-  
-  // Re-enable scrolling
-  document.body.style.overflow = 'auto';
-}
-
-// Close modal if user clicks outside the white box
-window.onclick = function(event) {
-  const modal = document.getElementById('booking-modal');
-  if (event.target == modal) {
-    closeModal();
+  // Set the source if it's new, otherwise keep it to avoid reload
+  if (iframe.src !== url) {
+    iframe.src = url;
   }
+  
+  // Show the box
+  expander.style.display = 'block';
+  
+  // Smooth Scroll to the box
+  expander.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function closeBooking() {
+  const expander = document.getElementById('booking-expander');
+  const iframe = document.getElementById('booking-frame');
+  
+  // Hide the box
+  expander.style.display = 'none';
+  
+  // Optional: clear src to stop background loading, or keep it for faster re-open
+  // iframe.src = ''; 
 }
