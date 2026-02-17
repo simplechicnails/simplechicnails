@@ -7,28 +7,27 @@
         "price": "$70",
         "duration": "2 hrs",
         "description": "A dry precision manicure finished with a flawless gel polish application for a clean, glossy result.",
-        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/uc2fa21tv7e999/LGA8JM8KWYCB0"
       },
       {
         "name": "Structured Gel Manicure (Rubber Base)",
         "price": "$80",
         "duration": "2 hrs",
-        "description": "A structured manicure designed to reinforce natural nails using rubber base—flexible support that helps reduce breakage.",
-        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+        "description": "A structured manicure designed to reinforce natural nails using rubber base—flexible support that helps reduce breakage while creating a smooth, balanced apex.",
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/gjs4fskvyp01v6/LGA8JM8KWYCB0"
       },
       {
         "name": "Hard Gel Overlay",
         "price": "$90",
         "duration": "2 hrs",
         "description": "A builder gel overlay that adds strength and structure to natural nails, finished with a refined apex and long-lasting shine.",
-        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/kzziaaulnnxevm/LGA8JM8KWYCB0"
       },
       {
         "name": "Gel-X Set",
         "price": "$90",
         "duration": "2 hrs",
-        "description": "Lightweight, full-coverage extensions for a natural look and durable wear, finished with precision detailing.",
-        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+        "description": "Lightweight, full-coverage extensions for a natural look and durable wear, finished with precision detailing."
       },
       {
         "name": "Acrylic Full Set",
@@ -42,14 +41,14 @@
         "price": "$80",
         "duration": "2 hrs",
         "description": "A structured rebalance for grown-out acrylic sets to restore shape, strength, and symmetry.",
-        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/hqrt2ylr71iai7/LGA8JM8KWYCB0"
       },
       {
         "name": "Men’s Manicure",
         "price": "$65",
         "duration": "2 hrs",
         "description": "A dry precision manicure focused on clean grooming, shape, and refined detailing.",
-        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/40zk7kug7xtphb/LGA8JM8KWYCB0"
       }
     ]
   },
@@ -60,8 +59,8 @@
         "name": "Dry Pedicure",
         "price": "$90",
         "duration": "2 hrs",
-        "description": "A waterless, detail-focused pedicure featuring precision nail work, advanced callus care, and gel polish application.",
-        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+        "description": "A waterless, detail-focused pedicure featuring precision nail work, advanced callus care, and gel polish application for smooth, polished feet.",
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/j9grstdr9asnqx/LGA8JM8KWYCB0"
       }
     ]
   },
@@ -72,36 +71,35 @@
         "name": "Callus Therapy Upgrade",
         "price": "+$15",
         "duration": "+15 mins",
-        "description": "Advanced callus softening and removal for noticeably smoother soles.",
-        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+        "description": "Advanced callus softening and removal for noticeably smoother soles."
       },
       {
         "name": "French Design",
         "price": "$15",
         "duration": "30 mins",
         "description": "Classic or modern french tip design added to any service.",
-        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/w7kyyye3o87m8v/LGA8JM8KWYCB0"
       },
       {
         "name": "Nail Design",
         "price": "$10+",
         "duration": "15 mins+",
         "description": "Custom nail art. Price varies by complexity.",
-        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/76y69a1pqac592/LGA8JM8KWYCB0"
       },
       {
         "name": "Nail Repair",
         "price": "$15",
         "duration": "15 mins",
         "description": "Repair for a single broken or damaged nail.",
-        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/nb01z1mek1siyw/LGA8JM8KWYCB0"
       },
       {
         "name": "Safe Product Removal",
         "price": "$20",
         "duration": "30 mins",
         "description": "Gentle removal of existing product to preserve natural nail health.",
-        "booking_url": "https://app.squareup.com/appointments/buyer/widget/h5yf1jp2ntn69t/LGA8JM8KWYCB0"
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/6qc51onhyxqg5r/LGA8JM8KWYCB0"
       }
     ]
   }
