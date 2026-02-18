@@ -7,7 +7,7 @@
         "price": "$70",
         "duration": "2 hrs",
         "description": "A dry precision manicure finished with a flawless gel polish application for a clean, glossy result.",
-        "booking_url": "https://app.squareup.com/appointments/buyer/widget/3f6htgjqqyjw0r/LGA8JM8KWYCB0"
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/uc2fa21tv7e999/LGA8JM8KWYCB0"
       },
       {
         "name": "Structured Gel Manicure (Rubber Base)",
@@ -27,7 +27,8 @@
         "name": "Gel-X Set",
         "price": "$90",
         "duration": "2 hrs",
-        "description": "Lightweight, full-coverage extensions for a natural look and durable wear, finished with precision detailing."
+        "description": "Lightweight, full-coverage extensions for a natural look and durable wear, finished with precision detailing.",
+        "booking_url": "https://app.squareup.com/appointments/buyer/widget/g1r1614lrezv6o/LGA8JM8KWYCB0"
       },
       {
         "name": "Acrylic Full Set",
@@ -67,12 +68,6 @@
   {
     "category": "Add-Ons",
     "items": [
-      {
-        "name": "Callus Therapy Upgrade",
-        "price": "+$15",
-        "duration": "+15 mins",
-        "description": "Advanced callus softening and removal for noticeably smoother soles."
-      },
       {
         "name": "French Design",
         "price": "$15",
