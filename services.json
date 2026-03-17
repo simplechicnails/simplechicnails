@@ -3,21 +3,21 @@
     "category": "Signature Manicures",
     "items": [
       {
-        "name": "Gel Manicure",
+        "name": "Russian Gel Manicure",
         "price": "$70",
-        "duration": "2 hrs",
+        "duration": "1 hr 30 mins",
         "description": "A dry precision manicure finished with a flawless gel polish application for a clean, glossy result.",
         "booking_url": "https://app.squareup.com/appointments/buyer/widget/uc2fa21tv7e999/LGA8JM8KWYCB0"
       },
       {
-        "name": "Structured Gel Manicure (Rubber Base)",
+        "name": "Structured Russian Gel Manicure",
         "price": "$75",
         "duration": "2 hrs",
         "description": "A structured manicure designed to reinforce natural nails using rubber base—flexible support that helps reduce breakage while creating a smooth, balanced apex.",
         "booking_url": "https://app.squareup.com/appointments/buyer/widget/gjs4fskvyp01v6/LGA8JM8KWYCB0"
       },
       {
-        "name": "Hard Gel Overlay",
+        "name": "Hard Gel Russian Manicure",
         "price": "$85",
         "duration": "2 hrs",
         "description": "A builder gel overlay that adds strength and structure to natural nails, finished with a refined apex and long-lasting shine.",
@@ -26,7 +26,7 @@
       {
         "name": "Gel-X Set",
         "price": "$85",
-        "duration": "2 hrs",
+        "duration": "2 hrs 30 mins",
         "description": "Lightweight, full-coverage extensions for a natural look and durable wear, finished with precision detailing.",
         "booking_url": "https://app.squareup.com/appointments/buyer/widget/g1r1614lrezv6o/LGA8JM8KWYCB0"
       },
@@ -58,7 +58,7 @@
     "items": [
       {
         "name": "Dry Pedicure",
-        "price": "$90",
+        "price": "$85",
         "duration": "2 hrs",
         "description": "A waterless, detail-focused pedicure featuring precision nail work, advanced callus care, and gel polish application for smooth, polished feet.",
         "booking_url": "https://app.squareup.com/appointments/buyer/widget/j9grstdr9asnqx/LGA8JM8KWYCB0"
