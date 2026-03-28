@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17932058950"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17932058950');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Staff Portal</title>
@@ -38,7 +47,6 @@
   <script>
     function checkPass() {
       const input = document.getElementById('passcode').value;
-      // SIMPLE PROTECTION ONLY - Passcode is 2026
       if(input === '2026') {
         document.getElementById('login').classList.add('hidden');
         document.getElementById('dashboard').classList.remove('hidden');
