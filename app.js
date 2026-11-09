@@ -16,7 +16,7 @@ async function fetchServices() {
       catTitle.textContent = cat.category;
       container.appendChild(catTitle);
 
-      cat.items.forEach(item => {
+      cat.items.filter(item => !item.hidden).forEach(item => {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'scn-service-item';
         
