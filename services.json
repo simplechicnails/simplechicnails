@@ -46,6 +46,7 @@
       },
       {
         "name": "Dual Form Gel Extensions + Russian Manicure",
+        "hidden": true,
         "price": "$140",
         "duration": "3 hrs 30 mins",
         "description": "A high-precision technique combining Russian manicure prep with dual forms to sculpt flawless extensions. This method creates perfectly shaped, lightweight nails with a smooth apex, crisp structure, and long-lasting results—minimal filing, maximum perfection.",
@@ -53,6 +54,7 @@
       },
       {
         "name": "Dual Form Hybrid Nails",
+        "hidden": true,
         "price": "$160",
         "duration": "3 hrs 45 mins",
         "description": "Hybrid Nails (Polygel + Hard Gel using Dual Forms) • Built with polygel inside dual forms for shape + speed • Reinforced with hard gel for structure and durability • Results: lightweight, strong, perfectly sculpted nails with a natural finish",
